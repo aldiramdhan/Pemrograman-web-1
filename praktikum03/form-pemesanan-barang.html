@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+</head>
+<body >
+    <div style="display: table; background-color: #c1c1c1; margin-left: auto; margin-right: auto;">
+        <br>
+    <table style=" border:1px solid #000; background-color: #ffff;" width="870px">
+        <tr>
+            <td width="40px"></td>
+                <td><button style="background-color: #ffff; border: 0px;">Home:</button></td>
+                    <td width="50px"></td>
+                    <td><button style="background-color: #ffff; border: 0px;">Generate Link:</button></td>
+                <td width="50px"></td>
+            <td><button style="background-color: #ffff; border: 0px;">Transaction History:</button></td>
+        <td width="50px"></td>
+            <td><button style="background-color: #ffff; border: 0px;">Policy:</button></td>
+                <td width="50px"></td>
+                    <td><button style="background-color: #ffff; border: 0px;">Logout</button></td>
+                <td width="50px"></td>
+            </tr>
+        </table>
+    <br>
+</div>
+<div style="display:table; background-color: #eeeeee; margin-left: auto; margin-right: auto;">
+    <form action="hasil-pemesanan-barang.html">
+    <table border="0" align="center">
+        <tr>
+            <td width="100px" height="250px" valign="top" align="left">
+                <img src="img.PNG" width="160px" height="160px">
+                <br>
+                <input name="Upload Picture" type="file"/>
+            </td>
+            <td width="0px" height="250px" valign="top" align="left">
+                <label for="name">Title Here:</label> <br>
+                <label for="desc">Desciption:</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="accountnumber">Account Number:</label>
+                <label for="bank"><p style="margin:3px 0px 0px 0px;">Bank:</p></label>
+                <label for="accountholder"><p style="margin:5px 0px 0px 0px;">Account Holder:</p></label>
+                <label for="transaction"><p style="margin:5px 0px 0px 0px;">Transaction:</p></label>
+                <label for="phone"><p style="margin:55px 0px 0px 0px;">Send to Mobile Phone:</p></label>
+                <label for="email"><p style="margin:5px 0px 0px 0px;">Send to Email:</p></label>
+            </td>
+            <td width="460px" height="250px" valign="top">
+                <input type="text" id="Name"/><br>
+                <textarea type="textarea" cols="0" rows="4"></textarea><br>
+                <input type="number" id="accountnumber"/>
+                <br>
+                <select name="select" id="bank">
+                    <option value="HSBC">HSBC</option>
+                    <option value="MANDIRI">MANDIRI</option>
+                    <option value="BCA">BCA</option>
+                    <option value="DANAMON">DANAMON</option>
+                    <option value="BRI">BRI</option>
+                </select>
+                <br>
+                <input type="number" id="accountholder"/>
+                <br>
+                <input type="number" id="transaction"/>
+                <br>
+                <font size="2">*if the transaction is for 3 person, choose 3 from the drop-down list</font>
+                <br>
+                <input type="checkbox" id="phone"><font size="2">Send to Mobile Phone</font>
+                <br>
+                <input type="checkbox" id="email"><font size="2">Send to Email</font>
+                <br>
+                <input type="number" id="phone"/>
+                <br>
+                <input type="email" id="email"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3" height="70px"><button style="background-color: green; color:white;">Generate Nabr Link </button></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3" height="70px" style="background-color:#c1c1c1;"></td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>
+</body>
+</html>
