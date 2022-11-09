@@ -1,0 +1,145 @@
+*,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #727BC0;
+}
+#header{
+    background-color: #4F5AB0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+.container-quotes {
+    text-align: center;
+    color: white;
+    border: dotted;
+    border-radius: 25px;
+    border-color:#0000;
+    background-color: #727BC0;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-quotes #quotes {
+    padding: 10px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+.navbar li {
+    list-style-type: none;
+    margin: auto 5px;;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #727BC0;
+    padding: 5px;
+}
+
+.gambar {
+    text-align: center;
+    padding: 20px;
+}
+
+.gambar #gambar1 {
+    margin-right: 20px;
+}
+
+.isi {
+    text-align: justify;
+    margin: 20px;
+}
+
+.isi #p-section {
+    display: flex;
+}
+
+.b{
+    color: black;
+    font-size: 62px;
+}
+
+.profil #hr {
+    padding: 15px;
+    width: 50%;
+    margin: 0px 25% 0px 25%;
+}
+
+.profil hr {
+    border: 1px solid black;
+    background-color: black;
+}
+
+
+.profil {
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-right: 40px;
+}
+
+.koleksi{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin-left: 180px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.koleksi img{
+    margin: 10px;
+}
+
+h2,h3{
+    text-align: center;
+}
+#beternak{
+    margin: 40px 20px 20px 20px;
+    border: solid;
+    text-align: justify;
+}
+
+#beternak ol {
+    margin: 20px;
+}
+
+.promo {
+    background-color: yellow;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: dotted red;
+
+}
+
+.eCommerce{
+    text-align: right;
+}
+.store {
+    justify-content: right;
+    display: flex;
+}
