@@ -1,0 +1,57 @@
+html {
+    margin: 5px;
+    padding: 0;
+    background: pink;
+}
+
+
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    margin: 5px;
+
+}
+
+.header {
+    background-color: skyblue;
+    height: 100px;
+
+}
+
+.main {
+    height: 500px;
+    display: flex;
+}
+
+.aside {
+    background-color: sandybrown;
+    width: 50%;
+    margin-right: 4vh;
+}
+
+.article {
+    background-color: salmon;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 4vh;
+}
+
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: skyblue;
+    height: 100px;
+}
