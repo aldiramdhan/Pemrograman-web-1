@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            width: 600px;
+            padding: 20px;
+        }
+
+        form div {
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post" >
+        <div>
+            <label for="nama">Masukkan nama:</label>
+            <input type="text" name="nama" id="nama" autofocus >
+        </div>
+
+        <div>
+            <label for="email">Masukkan email:</label>
+            <input type="email" name="email" id="email" >
+        </div>
+
+        <div>
+            <label for="jam">Jam Keberangkatan:</label>
+            <input type="time" name="jam" id="jam" >
+        </div>
+
+        <div>
+            <label for="tujuan">Tujuan Keberangkatan:</label>
+            <input type="text" name="tujuan" id="tujuan" >
+        </div>
+
+        <div>
+            <label for="tiket">Jumlah tiket:</label>
+            <input type="number" name="tiket" id="tiket" >
+        </div>
+
+        <div>
+            <button type="submit" onclick="formValidasi()">Kirim!</button>
+        </div>
+    </form>
+
+    <script>
+           function formValidasi(){
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+            let jam = document.getElementById("jam").value;
+            let tujuan = document.getElementById("tujuan").value;
+            let tiket = document.getElementById("tiket").value;
+
+            
+           }
+    </script>
+</body>
+</html>

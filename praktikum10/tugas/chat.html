@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat messages</title>
+    <link rel="stylesheet" href="/assets/css/style3.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="login.html">Nomor 1</a></li>
+          <li><a href="kurs-rupiah.html">Nomor 2</a></li>
+          <li><a href="chat.html">Nomor 3</a></li>
+          <li><a href="img-picker.html">Nomor 4</a></li>
+          <li><a href="">Nomor 5</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="chatbox">
+      <div id="messages" class="pesan"></div>
+      <input type="text" id="input-message" />
+      <button id="send-button">Kirim</button>
+    </div>
+
+    <script>
+      const messagesElement = document.getElementById("messages");
+      let inputElement = document.getElementById("input-message");
+      const sendButton = document.getElementById("send-button");
+
+      sendButton.addEventListener("click", () => {
+        const message = inputElement.value;
+
+        const messageElement = document.createElement("p");
+        messageElement.innerText = message;
+
+        messagesElement.appendChild(messageElement);
+
+        inputElement.value = "";
+      });
+    </script>
+  </body>
+</html>

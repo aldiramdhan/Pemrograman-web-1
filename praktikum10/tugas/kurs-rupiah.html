@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs Rupiah</title>
+    <link rel="stylesheet" href="/assets/css/style2.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="login.html">Nomor 1</a></li>
+          <li><a href="kurs-rupiah.html">Nomor 2</a></li>
+          <li><a href="chat.html">Nomor 3</a></li>
+          <li><a href="img-picker.html">Nomor 4</a></li>
+          <li><a href="">Nomor 5</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <fieldset>
+      <legend>Kurs Rupiah - Mata Uang Asing</legend>
+      <table border="1">
+        <thead>
+          <th>Masukkan Nilai</th>
+          <th for="valas">Valas</th>
+          <th>Nilai Rupiah</th>
+        </thead>
+        <tbody>
+          <td>
+            <input
+              type="number"
+              placeholder="0"
+              id="nilai"
+              onchange="kursMatauang()"
+            />
+          </td>
+          <td>
+            <select name="" id="valas" onchange="kursMatauang()">
+              <option value="p">--Pilih--</option>
+              <option value="dollarUs">Dollar US (USD)</option>
+              <option value="dollarSg">Dollar SG (SGD)</option>
+              <option value="ringgit">Ringgit Malaysia (RM)</option>
+              <option value="yen">Yen Jepang (JPY)</option>
+              <option value="euro">Euro (EUR)</option>
+              <option value="riyal">Riyal Arab Saudi (SAR)</option>
+            </select>
+          </td>
+          <td><input type="text" disabled id="hasil" placeholder="0" /></td>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <script>
+      function kursMatauang() {
+        satuan = document.getElementById("nilai").value;
+        dropdown = document.getElementById("valas").value;
+        dollar_us = 9.915;
+        dollar_sg = 13.472;
+        ringgit_rm = 874;
+        yen_jpn = 120;
+        euro_eur = 15.888;
+        riyal_arab = 3.592;
+
+        if (dropdown == "dollarUs") {
+          const hasil = satuan * dollar_us;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else if (dropdown == "dollarSg") {
+          const hasil = satuan * dollar_sg;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else if (dropdown == "ringgit") {
+          const hasil = satuan * ringgit_rm;
+          document.getElementById("hasil").value = "Rp." + hasil;
+        } else if (dropdown == "yen") {
+          const hasil = satuan * yen_jpn;
+          document.getElementById("hasil").value = "Rp." + hasil;
+        } else if (dropdown == "euro") {
+          const hasil = satuan * euro_eur;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else if (dropdown == "riyal") {
+          const hasil = satuan * riyal_arab;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else {
+          alert("silahkan pilih nilai mata uang");
+        }
+      }
+    </script>
+  </body>
+</html>
